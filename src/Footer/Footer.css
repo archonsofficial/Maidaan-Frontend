@@ -62,7 +62,7 @@
   margin-top: 0%;
   height: 120px;
   padding: 4%;
-  /* margin-bottom: 5%; */
+  margin-bottom: 1.5%;
 }
 .iconlink {
   display: flex;
@@ -114,3 +114,7 @@
     }
   }
   
+  .useless{
+    width: 20px;
+    height: 1px;
+  }
