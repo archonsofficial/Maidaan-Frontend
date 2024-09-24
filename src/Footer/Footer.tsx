@@ -43,6 +43,7 @@ export default function Footer() {
         </div>
         <text>Copyright © 2024 Maidaan| All Rights Reserved</text>
       </div>
+      <div className="useless"></div>
     </div>
   );
 }
