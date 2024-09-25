@@ -9,14 +9,16 @@ import FaqMain from "./LpFAQ/FaqMain";
 function App() {
   return (
     <>
-      <div className="landingPage">
-        <NextUIProvider>
+     
+        <NextUIProvider >
+        
           <NavBar />
           <Outlet />
           <FaqMain/>
           <Footer />
+          
         </NextUIProvider>
-      </div>
+      
     </>
   );
 }

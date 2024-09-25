@@ -7,7 +7,11 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Unbounded', 'sans-serif'], // Your custom font
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
