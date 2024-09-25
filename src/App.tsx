@@ -8,13 +8,15 @@ import './App.css'
 function App() {
   return (
     <>
-      <div className="landingPage">
-        <NextUIProvider>
+     
+        <NextUIProvider >
+        
           <NavBar />
           <Outlet />
           <Footer />
+          
         </NextUIProvider>
-      </div>
+      
     </>
   );
 }
