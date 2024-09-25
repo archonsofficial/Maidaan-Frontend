@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+.unbounded-<uniquifier> {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.Fagmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.faqBox {
+  
+  svg {
+    background-color: #cef23f;
+    color: black;
+    border-radius: 50%;
+  }
+  padding: 0px 20px;
+  width: 85%;
+  border-radius: 20px;
+  background: #ffffff1a;
+  color: white;
+  opacity: 1;
+}
+
+.faq1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.maiin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.px-2 {
+  width: 70%;
+}
+
+.topic {
+  color: #cef23f;
+  background-color: #ffffff1a;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  width: 246px;
+  height: 35px;
+  padding: 10px 20px;
+  border-radius: 36px;
+  opacity: 1;
+  margin: 5px;
+}
+
+.heading {
+  font-family: "Unbounded";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49.6px;
+  text-align: center;
+}
+
+.headingtwo {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44.77px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.written {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15%;
+  background-color: pink;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .faqBox {
+    padding: 10px;
+    width: 100%; /* Increase width on smaller screens for better spacing */
+  }
+
+  .heading, .headingtwo {
+    font-size: 24px; /* Reduce heading size for mobile */
+    line-height: 30px;
+  }
+
+  .topic {
+    font-size: 11px; /* Adjust topic size for mobile */
+    padding: 8px 15px;
+    width: 180px;
+    height: auto; /* Remove fixed height */
+  }
+
+  .written {
+    margin-bottom: 10%; /* Adjust bottom margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .faqBox {
+    padding: 5px;
+    width: 140%; /* Maximize width on extra small screens */
+  }
+
+  .heading, .headingtwo {
+    font-size: 20px; /* Further reduce heading size */
+    line-height: 26px;
+  }
+
+  .topic {
+    font-size: 10px;
+    padding: 5px 10px;
+    width: 150px;
+  }
+  .faq1{
+    margin-bottom: 50px;
+  }
+  span{
+    font-size: medium;
+  }
+}
