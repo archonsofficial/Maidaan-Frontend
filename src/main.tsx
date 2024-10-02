@@ -5,7 +5,7 @@ import { Router } from './Router.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <main className="dark text-foreground bg-background">
+    <main className="purple-dark text-foreground bg-background">
     <Router />
     </main>
   </StrictMode>,
