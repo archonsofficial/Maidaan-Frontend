@@ -8,11 +8,43 @@ export default {
   ],
   theme: {
     extend: {
+      top:{
+        '100':'500px'
+      },
       fontFamily: {
         sans: ['Unbounded', 'sans-serif'], // Your custom font
+      },
+      keyframes: {
+        slideInOut: {
+          '0%': { transform: 'translateX(-220%)' },
+          // '50%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+        slideInOutSecond: {
+          '0%': { transform: 'translateX(-240%)' },
+          // '50%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+      },
+      animation: {
+        slideInOut: 'slideInOut 12s linear infinite',
+        slideInOutSecond: 'slideInOut 12s linear 8s infinite',
       },
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
-};
+  plugins: [
+    nextui({
+      themes: {
+        "purple-dark": {
+          extend: "dark", // <- inherit default values from dark theme
+          colors: {
+            background: "#0A0A0A",
+            foreground: "#ffffff",
+
+          },
+        },
+      },
+    },)
+  ]
+  }

@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
-import { NextUIProvider } from "@nextui-org/react";
 import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
 import './App.css'
-
-
+import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
   return (
