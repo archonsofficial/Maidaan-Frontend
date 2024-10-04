@@ -1,8 +1,10 @@
-import React from 'react'
+
 import FaqMain from "../LpFAQ/FaqMain";
+import LpEventspage from '../LpEvents/LpEventspage';
 export default function HomePage() {
   return (
     <>
+    <LpEventspage/>
     <FaqMain/>
     </>
   )
