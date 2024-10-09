@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 
-=======
 import React, { useState } from 'react';
->>>>>>> c8db5685cf0d568f37ede6a05092655e0e70fdcc
+
 import { NavLink } from 'react-router-dom';
 import logo from "../assets/Logo.png";
 
@@ -44,7 +42,7 @@ const Navbar: React.FC = () => {
 
         {/* Right side buttons for Large Screens */}
         <div className="lg:flex items-center space-x-3 hidden">
-          <button className="bg-transparent text-[#CEF23F] hover:text-lime-500 font-light px-4 py-2 rounded-full text-sm font-light">
+          <button className="bg-transparent text-[#CEF23F] hover:text-lime-500 font-light px-4 py-2 rounded-full text-sm ">
             Host an Event
           </button>
           <button className="bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-sm font-light">
