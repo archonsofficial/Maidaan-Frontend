@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 
-.unbounded-<uniquifier > {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+
+.footer{
+  height: max-content;
 }
 
 .ft1,
@@ -44,6 +42,7 @@
   font-weight: 500;
   line-height: 23.56px;
   text-align: left;
+  margin: 0%;
 }
 
 .linkpart {
@@ -103,13 +102,13 @@
     }
     .ft2{
       .link1{
-          font-size: medium;
+          font-size: small;
       }
       .iconlink{
           width: 70%;
       }
       text{
-        font-size: small;
+        font-size:xx-small;
       }
     }
   }

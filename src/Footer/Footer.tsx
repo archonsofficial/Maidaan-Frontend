@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="ft2">
-        <Link to="/" className="link1">
+        <Link to="/" className="link1 text-sm">
           Follow us:
         </Link>
         <div className="iconlink">
@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <text>Copyright © 2024 Maidaan| All Rights Reserved</text>
+        <text className=" cpy text-xs ">Copyright © 2024 Maidaan| All Rights Reserved</text>
       </div>
       <div className="useless"></div>
     </div>
