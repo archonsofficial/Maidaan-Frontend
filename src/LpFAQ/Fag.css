@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 
-.unbounded-<uniquifier> {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+
 
 .Fagmain {
   display: flex;
