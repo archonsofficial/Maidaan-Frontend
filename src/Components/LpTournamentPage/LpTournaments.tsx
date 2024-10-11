@@ -1,9 +1,9 @@
 import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
 
-import Tone from "../assets/Tone.jpeg";
-import Ttwo from "../Assets/Ttwo.jpeg";
-import Tthree from "../Assets/Tthree.jpeg";
-import Tfour from "../Assets/Tfour.jpeg";
+import Tone from "../../assets/Tone.jpeg";
+import Ttwo from "../../assets/Ttwo.jpeg";
+import Tthree from "../../assets/Tthree.jpeg";
+import Tfour from "../../assets/Tfour.jpeg";
 
 
 // Sample data

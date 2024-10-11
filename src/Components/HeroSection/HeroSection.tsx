@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../assets/img_1.svg"
-import img2 from "../assets/img_2.svg"
-import img3 from "../assets/img_3.svg"
-import blackSpot from "../assets/1000_F_172753992_mEGcpjKVBOOQIcEqGTP9VEWfsQ4Qda1F 1.png"
+import img1 from "../../assets/img_1.svg"
+import img2 from "../../assets/img_2.svg"
+import img3 from "../../assets/img_3.svg"
+import blackSpot from "../../assets/1000_F_172753992_mEGcpjKVBOOQIcEqGTP9VEWfsQ4Qda1F 1.png"
 export default function HeroSection() {
   return (
     <>
