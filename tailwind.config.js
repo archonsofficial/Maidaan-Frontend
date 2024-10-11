@@ -13,22 +13,17 @@ export default {
       },
       fontFamily: {
         sans: ['Unbounded', 'sans-serif'], // Your custom font
+        
       },
       keyframes: {
         slideInOut: {
-          '0%': { transform: 'translateX(-220%)' },
+          '0%': { transform: 'translateX(-120%)' },
           // '50%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(200%)' },
-        },
-        slideInOutSecond: {
-          '0%': { transform: 'translateX(-240%)' },
-          // '50%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(200%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
       animation: {
-        slideInOut: 'slideInOut 12s linear infinite',
-        slideInOutSecond: 'slideInOut 12s linear 8s infinite',
+        slideInOut: 'slideInOut 8s linear infinite',
       },
     },
   },

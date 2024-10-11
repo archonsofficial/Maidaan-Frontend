@@ -1,6 +1,6 @@
-import Eone from "../Assets/Eone.jpeg"
-import Etwo from "../Assets/Etwo.jpeg"
-import Ethree from "../Assets/Ethree.jpeg"
+import Eone from "../../assets/Eone.jpeg"
+import Etwo from "../../assets/Etwo.jpeg"
+import Ethree from "../../assets/Ethree.jpeg"
 
 
 export default function LpEvent() {
