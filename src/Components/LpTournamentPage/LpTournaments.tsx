@@ -4,6 +4,7 @@ import Tone from "../../assets/Tone.jpeg";
 import Ttwo from "../../assets/Ttwo.jpeg";
 import Tthree from "../../assets/Tthree.jpeg";
 import Tfour from "../../assets/Tfour.jpeg";
+import BTnCompo from "../Btn/BTnCompo";
 
 
 // Sample data
@@ -40,11 +41,9 @@ export default function LpTournaments() {
         <div className="heading flex justify-start text-3xl md:text-5xl lg:text-7xl m-2 p-2">
           <h1>Explore our Tournaments</h1>
         </div>
+
         <div className="flex justify-end items-end">
-          <button className="linkbtn bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-xs md:text-sm font-light w-50 md:w-50 h-7 flex items-center">
-            View All Tournaments
-            <i className="fa-solid fa-arrow-right fa-xl ml-2"></i>
-          </button>
+          <BTnCompo text="View All Tournaments"/>
         </div>
       </div>
       {/* table content */}
@@ -53,8 +52,8 @@ export default function LpTournaments() {
           <Card
             key={index}
             className={`w-full h-[330px] ${
-              (index === 0 || index === 3) 
-                ? "col-span-12 sm:col-span-7" 
+              index === 0 || index === 3
+                ? "col-span-12 sm:col-span-7"
                 : "col-span-12 sm:col-span-5"
             }`}
           >
@@ -64,7 +63,6 @@ export default function LpTournaments() {
               </h4>
             </CardHeader>
             <Image
-            
               removeWrapper
               alt="Card background"
               className="z-0 w-full h-full object-cover bg-white/30 "
