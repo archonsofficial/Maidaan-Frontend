@@ -31,21 +31,25 @@ export default function LpEvent() {
   ];
 
   return (
-    <div className="main">
-      <div className="mainone m-4 md:m-16 lg:m-32 mb-8 lg:mb-16">
-        <div className="flex w-28 h-8 justify-center items-center text-[#CEF23F] align-middle rounded-3xl text-xs md:text-sm font-light bg-[rgba(255,255,255,0.1)]">
-          EVENTS
+    <section className=" text-white py-12 m-8">
+      <div className="container mx-auto">
+      <div className="flex justify-start items-end mb-8">
+          <button className="linkbtn text-[#CEF23F] bg-[#FFFFFF10] px-4 py-[10px] rounded-full text-xs  font-bold h-9 flex items-center">
+           Events
+          </button>
         </div>
-        <div className="heading flex justify-start text-3xl md:text-5xl lg:text-7xl m-2 p-2">
-          <h1>Discover Thrilling Sports Events</h1>
-        </div>
+
+        <h2 className="text-4xl font-normal  ">
+        Discover Thrilling Sports Events
+        </h2>
+        
+
         {/* <BTnCompo text="View All Events"/> */}
-        <div className="flex justify-end items-end">
+        <div className="flex justify-end items-end ">
           <BTnCompo text="View All Events"/>
         </div>
-      </div>
 
-      <div className="maintwo max-w-[90%] mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 justify-center mb-16 lg:mb-44">
+      <div className="maintwo  mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 justify-center mb-16 lg:mb-44">
         {eventData.map((event, index) => (
           <div key={index} className="card flex flex-col justify-center align-middle items-center">
             <div
@@ -72,5 +76,6 @@ export default function LpEvent() {
         ))}
       </div>
     </div>
+    </section>
   );
 }

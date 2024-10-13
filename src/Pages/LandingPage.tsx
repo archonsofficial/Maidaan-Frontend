@@ -20,7 +20,6 @@ export default function LandingPage() {
     <ServicesSection/>
     <LpTournaments/>
     <LpEvent/>
-    {/* <LpEventspage/> */}
     <FaqMain/>
     
     </>
