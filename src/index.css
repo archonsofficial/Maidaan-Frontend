@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import "./styles/fonts.css" ;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 
-body{
-    @apply font-sans ;
-    
+body {
+  @apply font-sans;
 }

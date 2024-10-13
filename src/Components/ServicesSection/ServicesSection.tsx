@@ -6,10 +6,10 @@ import sifour from "../../assets/serviceIconFour.svg"
 import {ArrowCircleRight2} from "iconsax-react"
 const ServicesSection = () => {
   return (
-    <section className="bg-black text-white py-12 mt-8">
+    <section className=" text-white py-12 m-8">
       <div className="container mx-auto">
       <div className="flex justify-start items-end mb-8">
-          <button className="linkbtn text-[#CEF23F] bg-[#FFFFFF10] px-4 py-[10px] rounded-full text-xs  font-bold h-9 w-24 flex items-center">
+          <button className="linkbtn text-[#CEF23F] bg-[#FFFFFF10] px-4 py-[10px] rounded-full text-xs  font-bold h-9  flex items-center">
            Services
           </button>
         </div>
@@ -26,16 +26,16 @@ const ServicesSection = () => {
           <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
             <div>
                <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl"> <img src={sio} alt="" /></div>
-              <h3 className="text-xl font-bold mb-4">
+              <h3 className="text-xl font-bold mb-4 font-secondaryFont">
                 Tournament & Match Organization
               </h3>
-              <p className="mb-8 font-light text-base font-[Sansation Light]">
+              <p className="mb-8 font-thin text-base ">
                 Effortlessly organize and manage local or national sports events
                 with tools designed for smooth scheduling, team coordination,
                 and event creation.
               </p>
             </div>
-            <button className="">Host a Tournament</button>
+            <button className="flex gap-2 justify-center align-middle">Host a Tournament <ArrowCircleRight2 size="24" color="#ffffff" className="-rotate-45 "/> </button>
           </div>
 
           {/* Player & Team Profiles */}
@@ -45,13 +45,13 @@ const ServicesSection = () => {
               <h3 className="text-xl font-bold mb-4">
                 Tournament & Match Organization
               </h3>
-              <p className="mb-8 font-light text-base font-[Sansation Light]">
+              <p className="mb-8 font-light text-base font-secondaryFont">
                 Effortlessly organize and manage local or national sports events
                 with tools designed for smooth scheduling, team coordination,
                 and event creation.
               </p>
             </div>
-            <button className="">Host a Tournament</button>
+            <button className="flex gap-2 justify-center align-middle">Host a Tournament <ArrowCircleRight2 size="24" color="#ffffff" className="-rotate-45 "/> </button>
           </div>
           {/* Academy & Fitness Courses */}
           <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
@@ -60,7 +60,7 @@ const ServicesSection = () => {
               <h3 className="text-xl font-bold mb-4">
                 Tournament & Match Organization
               </h3>
-              <p className="mb-8 font-light text-base font-[Sansation Light]">
+              <p className="mb-8 font-light text-base font-secondaryFont">
                 Effortlessly organize and manage local or national sports events
                 with tools designed for smooth scheduling, team coordination,
                 and event creation.
@@ -76,13 +76,13 @@ const ServicesSection = () => {
               <h3 className="text-xl font-bold mb-4">
                 Tournament & Match Organization
               </h3>
-              <p className="mb-8 font-light text-base font-[Sansation Light]">
+              <p className="mb-8 font-light text-base font-secondaryFont">
                 Effortlessly organize and manage local or national sports events
                 with tools designed for smooth scheduling, team coordination,
                 and event creation.
               </p>
             </div>
-            <button className="">Host a Tournament</button>
+            <button className="flex gap-2 justify-center align-middle">Host a Tournament <ArrowCircleRight2 size="24" color="#ffffff" className="-rotate-45 "/> </button>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default {
       },
       fontFamily: {
         sans: ['Unbounded', 'sans-serif'], // Your custom font
-        
+        secondaryFont: ['SecondaryFont','sans-serif']
       },
       keyframes: {
         slideInOut: {
