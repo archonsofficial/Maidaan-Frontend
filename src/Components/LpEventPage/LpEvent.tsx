@@ -1,6 +1,7 @@
 import Eone from "../../assets/Eone.jpeg"
 import Etwo from "../../assets/Etwo.jpeg"
 import Ethree from "../../assets/Ethree.jpeg"
+import BTnCompo from "../Btn/BTnCompo";
 
 
 export default function LpEvent() {
@@ -37,13 +38,15 @@ export default function LpEvent() {
            Events
           </button>
         </div>
+
         <h2 className="text-4xl font-normal  ">
         Discover Thrilling Sports Events
         </h2>
-        <div className="flex justify-end items-end mb-8">
-          <button className="linkbtn bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-xs md:text-sm font-light w-50 md:w-50 h-7 flex items-center">
-            View All Events
-          </button>
+        
+
+        {/* <BTnCompo text="View All Events"/> */}
+        <div className="flex justify-end items-end ">
+          <BTnCompo text="View All Events"/>
         </div>
 
       <div className="maintwo  mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 justify-center mb-16 lg:mb-44">
