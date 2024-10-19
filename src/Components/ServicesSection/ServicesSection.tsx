@@ -4,6 +4,8 @@ import sitwo from "../../assets/serviceIconTwo.svg";
 import sithree from "../../assets/serviceIconThree.svg";
 import sifour from "../../assets/serviceIconFour.svg";
 import { ArrowCircleRight2 } from "iconsax-react";
+import BTnCompo from "../Btn/BTnCompo";
+
 const ServicesSection = () => {
   return (
     <section className=" text-white py-12 m-8">
@@ -14,10 +16,8 @@ const ServicesSection = () => {
           </button>
         </div>
         <h2 className="text-4xl font-normal  ">What we are offering</h2>
-        <div className="flex justify-end items-end mb-8">
-          <button className="linkbtn bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-xs md:text-sm font-light w-50 md:w-50 h-7 flex items-center">
-            View All Sevices
-          </button>
+        <div className="flex justify-end items-end mb-8 ">
+          <BTnCompo text="View All Services" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Tournament & Match Organization */}
@@ -53,7 +53,9 @@ const ServicesSection = () => {
                 {" "}
                 <img src={sitwo} alt="" />
               </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">Player & Team Profiles</h3>
+              <h3 className="text-xl font-bold mb-4 font-secondaryFont">
+                Player & Team Profiles
+              </h3>
               <p className="mb-8 font-light text-base font-secondaryFont">
                 Create profiles to showcase achievements, track progress, and
                 connect with the sports community. Perfect for individual
@@ -102,7 +104,9 @@ const ServicesSection = () => {
                 {" "}
                 <img src={sifour} alt="" />
               </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">Sports News & Updates</h3>
+              <h3 className="text-xl font-bold mb-4 font-secondaryFont">
+                Sports News & Updates
+              </h3>
               <p className="mb-8 font-light text-base font-secondaryFont">
                 Sports News & UpdatesStay updated with the latest sports news,
                 scores, and upcoming events, all accessible from your

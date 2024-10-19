@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa"; // Import React Icons
 import Logo from "../../assets/Logo.png";
 
 export default function Footer() {
@@ -15,6 +16,7 @@ export default function Footer() {
           <Link to="/">Explore Sports Events</Link>
         </div>
       </div>
+
       <div className="ft2">
         <Link to="/" className="link1 text-sm">
           Follow us:
@@ -22,27 +24,28 @@ export default function Footer() {
         <div className="iconlink">
           <div className="icon">
             <Link to="/">
-              <i className="fa-brands fa-facebook fa-xl"></i>
+              <FaFacebook className="fa-xl" />
             </Link>
           </div>
           <div className="icon">
             <Link to="/">
-              <i className="fa-brands fa-x-twitter fa-xl"></i>
+              <FaTwitter className="fa-xl" />
             </Link>
           </div>
           <div className="icon">
             <Link to="/">
-              <i className="fa-brands fa-instagram fa-xl"></i>
+              <FaInstagram className="fa-xl" />
             </Link>
           </div>
           <div className="icon">
             <Link to="/">
-              <i className="fa-brands fa-youtube fa-xl"></i>
+              <FaYoutube className="fa-xl" />
             </Link>
           </div>
         </div>
-        <text className=" cpy text-xs ">Copyright © 2024 Maidaan| All Rights Reserved</text>
+        <p className="cpy text-xs">Copyright © 2024 Maidaan | All Rights Reserved</p>
       </div>
+
       <div className="useless"></div>
     </div>
   );
