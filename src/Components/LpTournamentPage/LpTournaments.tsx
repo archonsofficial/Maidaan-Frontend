@@ -32,22 +32,21 @@ const tournaments = [
 
 export default function LpTournaments() {
   return (
-    <section className=" text-white py-12 m-8">
-      <div className="container mx-auto">
+    <section className=" text-white py-12 m-8 flex justify-center align-middle ">
+      <div className="container mx-auto flex justify-center flex-col align-middle">
         <div className="flex justify-start items-end mb-8">
           <button className="linkbtn text-[#CEF23F] bg-[#FFFFFF10] px-4 py-[10px] rounded-full text-sm  font-bold h-9 font-secondaryFont flex items-center">
             TOURNAMENTS
           </button>
         </div>
         <h2 className="text-4xl font-normal  ">Explore Our Tournaments</h2>
-        <div className="flex justify-end items-end mb-8">
-          <button className="linkbtn bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-xs md:text-sm font-light w-50 md:w-50 h-7 flex items-center">
-            View All Tournaments
-          </button>
+        <div className="flex justify-end items-end mb-8 ">
+          <BTnCompo text="View All Tournaments" />
         </div>
 
         {/* table content */}
-        <div className="max-w-[1000px] gap-4 grid grid-cols-12 grid-rows-2 px-8 mb-9">
+        <div className="flex justify-center align-middle">
+        <div className="max-w-[1000px] gap-4 grid grid-cols-12 grid-rows-2 px-8 mb-9 ">
           {tournaments.map((tournament, index) => (
             <Card
               key={index}
@@ -82,7 +81,7 @@ export default function LpTournaments() {
               </CardFooter>
             </Card>
           ))}
-        </div>
+        </div></div>
       </div>
     </section>
   );
