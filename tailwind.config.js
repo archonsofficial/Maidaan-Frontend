@@ -1,3 +1,5 @@
+import { transform } from "typescript";
+
 const { nextui } = require("@nextui-org/react");
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -21,10 +23,15 @@ export default {
           // '50%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        arrowRotate:{
+          '0%':{transform: 'rotate(-45deg)'},
+          '100%':{transform:'rotate(0deg)'}
+        }
       },
       animation: {
         slideInOut: 'slideInOut 8s linear infinite',
-      },
+        arrowRotate: 'arrowRotate 0.8s linear 1 forwards'
+      }, 
     },
   },
   darkMode: "class",

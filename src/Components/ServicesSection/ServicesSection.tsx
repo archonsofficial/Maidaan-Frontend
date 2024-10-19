@@ -5,6 +5,36 @@ import sithree from "../../assets/serviceIconThree.svg";
 import sifour from "../../assets/serviceIconFour.svg";
 import { ArrowCircleRight2 } from "iconsax-react";
 const ServicesSection = () => {
+  const serviceData = [
+    {
+      heading: " Tournament & Match Organization",
+      description:
+        " Effortlessly organize and manage local or national sports events with tools designed for smooth scheduling, team coordination, and event creation.",
+      service: " Host a Tournament",
+      img: sio,
+    },
+    {
+      heading: "Player & Team Profiles",
+      description:
+        "  Create profiles to showcase achievements, track progress, andconnect with the sports community. Perfect for individual players and teams alike.",
+      service: "Build Your Profiles",
+      img: sitwo,
+    },
+    {
+      heading: " Academy & Fitness Courses",
+      description:
+        " Enroll in training programs from top academies and fitnesscenters, available both online and offline, to enhance yourskills with expert guidance.",
+      service: "Explore Courses",
+      img: sithree,
+    },
+    {
+      heading: "Sports News & Updates",
+      description:
+        "Sports News & UpdatesStay updated with the latest sports news,scores, and upcoming events, all accessible from yourpersonalized profile.",
+      service: "Get Updates",
+      img: sifour,
+    },
+  ];
   return (
     <section className=" text-white py-12 m-8">
       <div className="container mx-auto">
@@ -20,104 +50,30 @@ const ServicesSection = () => {
           </button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Tournament & Match Organization */}
-          <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
-            <div>
-              <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
-                {" "}
-                <img src={sio} alt="" />
+          {serviceData.map((service) => (
+            <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
+              <div>
+                <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
+                  {" "}
+                  <img src={service.img} alt="" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 font-secondaryFont">
+                  {service.heading}
+                </h3>
+                <p className="mb-8 font-thin text-base ">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">
-                Tournament & Match Organization
-              </h3>
-              <p className="mb-8 font-thin text-base ">
-                Effortlessly organize and manage local or national sports events
-                with tools designed for smooth scheduling, team coordination,
-                and event creation.
-              </p>
+              <button className="flex gap-2 justify-center align-middle group">
+                {service.service + " "}
+                <ArrowCircleRight2
+                  size="24"
+                  color="#ffffff"
+                  className="-rotate-45 group-hover:animate-arrowRotate "
+                />{" "}
+              </button>
             </div>
-            <button className="flex gap-2 justify-center align-middle">
-              Host a Tournament{" "}
-              <ArrowCircleRight2
-                size="24"
-                color="#ffffff"
-                className="-rotate-45 "
-              />{" "}
-            </button>
-          </div>
-
-          {/* Player & Team Profiles */}
-          <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
-            <div>
-              <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
-                {" "}
-                <img src={sitwo} alt="" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">Player & Team Profiles</h3>
-              <p className="mb-8 font-light text-base font-secondaryFont">
-                Create profiles to showcase achievements, track progress, and
-                connect with the sports community. Perfect for individual
-                players and teams alike.
-              </p>
-            </div>
-            <button className="flex gap-2 justify-center align-middle">
-              Build Your Profiles{" "}
-              <ArrowCircleRight2
-                size="24"
-                color="#ffffff"
-                className="-rotate-45 "
-              />{" "}
-            </button>
-          </div>
-          {/* Academy & Fitness Courses */}
-          <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
-            <div>
-              <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
-                {" "}
-                <img src={sithree} alt="" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">
-                Academy & Fitness Courses
-              </h3>
-              <p className="mb-8 font-light text-base font-secondaryFont">
-                Enroll in training programs from top academies and fitness
-                centers, available both online and offline, to enhance your
-                skills with expert guidance.
-              </p>
-            </div>
-            <button className="flex gap-2 justify-center align-middle">
-              Explore Courses{" "}
-              <ArrowCircleRight2
-                size="24"
-                color="#ffffff"
-                className="-rotate-45 "
-              />{" "}
-            </button>
-          </div>
-
-          {/* Sports News & Updates */}
-          <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
-            <div>
-              <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
-                {" "}
-                <img src={sifour} alt="" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 font-secondaryFont">Sports News & Updates</h3>
-              <p className="mb-8 font-light text-base font-secondaryFont">
-                Sports News & UpdatesStay updated with the latest sports news,
-                scores, and upcoming events, all accessible from your
-                personalized profile.
-              </p>
-            </div>
-            <button className="flex gap-2 justify-center align-middle">
-              Get Updates{" "}
-              <ArrowCircleRight2
-                size="24"
-                color="#ffffff"
-                className="-rotate-45 "
-              />{" "}
-            </button>
-          </div>
+          ))}
         </div>
       </div>
     </section>
