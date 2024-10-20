@@ -4,6 +4,8 @@ import sitwo from "../../assets/serviceIconTwo.svg";
 import sithree from "../../assets/serviceIconThree.svg";
 import sifour from "../../assets/serviceIconFour.svg";
 import { ArrowCircleRight2 } from "iconsax-react";
+import BTnCompo from "../Btn/BTnCompo";
+
 const ServicesSection = () => {
   const serviceData = [
     {
@@ -44,10 +46,8 @@ const ServicesSection = () => {
           </button>
         </div>
         <h2 className="text-4xl font-normal  ">What we are offering</h2>
-        <div className="flex justify-end items-end mb-8">
-          <button className="linkbtn bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-xs md:text-sm font-light w-50 md:w-50 h-7 flex items-center">
-            View All Sevices
-          </button>
+        <div className="flex justify-end items-end mb-8 ">
+          <BTnCompo text="View All Services" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {serviceData.map((service) => (
