@@ -1,15 +1,21 @@
 
-import React, { useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store/store';
+import { increment, reset, incrementByAmount } from '../../store/CounterSlice';
 import { NavLink } from 'react-router-dom';
 import logo from "../../assets/Logo.png";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const dispatch = useDispatch();
+  const count = useSelector((state: RootState) => state.counter.value);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(()=>{
+    dispatch(reset());
+  },[])
 
   return (
     <nav className="bg-[#00000025]">
@@ -22,7 +28,8 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Center Links for Large Screens */}
-        <div className="hidden lg:flex items-center border border-white rounded-3xl gap-4 px-4 py-2">
+       { count==0?
+        (<div className="hidden lg:flex items-center border border-white rounded-3xl gap-4 px-4 py-2">
           <NavLink to="" className={({ isActive }) => `hover:text-gray-200 py-2 px-2 rounded-3xl text-sm font-light ${isActive ? "text-[#CEF23F] bg-[#FFFFFF15]" : "text-white"}`}>
             Home
           </NavLink>
@@ -38,17 +45,18 @@ const Navbar: React.FC = () => {
           <NavLink to="schemes" className={({ isActive }) => `hover:text-gray-200 py-2 px-2 rounded-3xl text-sm font-light ${isActive ? "text-[#CEF23F] bg-[#FFFFFF15]" : "text-white"}`}>
             Schemes
           </NavLink>
-        </div>
-
+        </div>):null
+            }
         {/* Right side buttons for Large Screens */}
-        <div className="lg:flex items-center space-x-3 hidden">
+      { count==0?( <div className="lg:flex items-center space-x-3 hidden">
           <button className="bg-transparent text-[#CEF23F] hover:text-lime-500 font-light px-4 py-2 rounded-full text-sm ">
             Host an Event
           </button>
           <button className="bg-[#CEF23F] hover:bg-lime-500 text-black px-4 py-2 rounded-full text-sm font-light">
             Sign in
           </button>
-        </div>
+        </div>):null}
+        
 
         {/* Mobile menu button */}
         <div className="lg:hidden">
@@ -71,7 +79,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu (Slide-in effect) */}
-      <div
+      {count==0?(<div
         className={`lg:hidden fixed top-0 left-0 w-full h-full bg-[#000000a5] z-50 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}
       >
         <div className="bg-[#111111] w-64 h-full p-5">
@@ -131,7 +139,7 @@ const Navbar: React.FC = () => {
             Schemes
           </NavLink>
         </div>
-      </div>
+      </div>):null}
     </nav>
   );
 };

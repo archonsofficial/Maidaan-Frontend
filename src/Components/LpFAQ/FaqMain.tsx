@@ -9,8 +9,8 @@ export default function FaqMain() {
         <Chip className="topic" variant="flat">
           FREQUENTLY ASKED QUESTIONS
         </Chip>
-        <text className="heading">Have Questions?</text>
-        <text className="headingtwo">We Have Answers!</text>
+        <p className="heading">Have Questions?</p>
+        <p className="headingtwo">We Have Answers!</p>
       </div>
       <FaqPart />
     </div>

@@ -41,7 +41,7 @@ export default function LpTournaments() {
         </div>
         <h2 className="text-4xl font-normal  ">Explore Our Tournaments</h2>
         <div className="flex justify-end items-end mb-8 ">
-          <BTnCompo text="View All Tournaments" />
+          <BTnCompo text="View All Tournaments" sty="" />
         </div>
 
         {/* table content */}
