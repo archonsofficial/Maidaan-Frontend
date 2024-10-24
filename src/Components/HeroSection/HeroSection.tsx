@@ -1,4 +1,5 @@
 import React from "react";
+import BTnCompo from "../Btn/BTnCompo";
 import img1 from "../../assets/img_1.svg"
 import img2 from "../../assets/img_2.svg"
 import img3 from "../../assets/img_3.svg"
@@ -7,7 +8,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-[80vh] text-white p-6">
-        <div className="text-center">
+        <div className="text-center flex flex-col items-center justify-center ">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold ">
             STEP INTO THE
             <span className="block text-[#CEF23F]">MAIDAAN</span>
@@ -17,13 +18,15 @@ export default function HeroSection() {
             tournament offers a chance to challenge yourself and connect with
             others.
           </p>
-
-          <button className="mt-8 bg-[#CEF23F] text-black font-medium rounded-full px-8 py-3 text-lg transition-transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-lime-300">
+           <div className="w-max mt-8">
+           <BTnCompo text={"Sign in"} sty="font medium px-8 py-3 text-lg" />
+           </div>
+          {/* <button className="mt-8 bg-[#CEF23F] text-black  font-medium  rounded-full px-8 py-3 text-lg transition-transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-lime-300">
             Sign in{" "}
             <span aria-hidden="true" className="ml-2">
               ➔
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
      <div className="flex flex-col justify-end">

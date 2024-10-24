@@ -46,7 +46,7 @@ export default function LpEvent() {
 
         {/* <BTnCompo text="View All Events"/> */}
         <div className="flex justify-end items-end mb-8 ">
-          <BTnCompo text="View All Events" />
+          <BTnCompo text="View All Events" sty="" />
         </div>
 
         <div className="maintwo mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 justify-center mb-16 lg:mb-44">

@@ -1,4 +1,3 @@
-import React from "react";
 import sio from "../../assets/serviceIconOne.svg";
 import sitwo from "../../assets/serviceIconTwo.svg";
 import sithree from "../../assets/serviceIconThree.svg";
@@ -47,11 +46,11 @@ const ServicesSection = () => {
         </div>
         <h2 className="text-4xl font-normal  ">What we are offering</h2>
         <div className="flex justify-end items-end mb-8 ">
-          <BTnCompo text="View All Services" />
+          <BTnCompo text="View All Services" sty="" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {serviceData.map((service) => (
-            <div className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
+          {serviceData.map((service,index) => (
+            <div key={index} className="bg-[#FFFFFF15] p-6 rounded-2xl flex flex-col justify-between items-start">
               <div>
                 <div className="bg-[#FFFFFF05] h-[54px] w-[54px] p-[12px] mb-2 rounded-2xl">
                   {" "}
