@@ -21,7 +21,7 @@ export default function AnalyticalSection() {
         const distanceToStart = scrollPosition - effectStart;
         const scrollDistance = Math.max(0, distanceToStart);
         const maxOffset = 100;
-        const mergeOffset = 10;
+        const mergeOffset =-2;
 
         const leftOffset = Math.min(maxOffset, scrollDistance / 2);
         const rightOffset = Math.min(maxOffset, scrollDistance / 2);
