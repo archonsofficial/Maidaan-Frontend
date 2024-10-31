@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   },[])
 
   return (
-    <nav className="bg-[#00000025]">
+    <nav className="bg-[#00000025] sticky top-0 z-50 ">
       <div className="px-6 mx-auto w-full flex justify-between items-center py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">

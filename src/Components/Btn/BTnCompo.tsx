@@ -7,7 +7,7 @@ interface BTnCompoProps {
 // const BTnCompo:React.FC<BTnCompoProps>=({text,class})=>{
   function BTnCompo({ text, sty }: BTnCompoProps) {
   return (
-    <div className={`flex  justify-center align-middle ${sty===""?"text-xs":sty} md:text-sm hover:justify-around items-center transition-all duration-100 ease-in-out group`}>
+    <div className={`flex  justify-center cursor-pointer align-middle ${sty===""?"text-xs":sty} md:text-sm hover:justify-around items-center transition-all duration-100 ease-in-out group`}>
       <div className={`flex justify-start  items-center pr-3 bg-[#CEF23F] md:w-50 h-6 text-black px-4 py-2 rounded-l-3xl transition-all duration-100 ease-in-out ${sty}`}>
         {text}
       </div>

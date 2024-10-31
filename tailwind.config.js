@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'Rectangle35': "",
+      },
       top:{
         '100':'500px'
       },
