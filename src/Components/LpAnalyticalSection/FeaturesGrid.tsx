@@ -3,6 +3,8 @@ import p1 from "../../Assets/people.png";
 import p2 from "../../Assets/peopletwo.png";
 import p3 from "../../Assets/peoplethree.png";
 import verify from "../../Assets/verify.png";
+import "./analyticalstyle.css";
+
 
 const features = [
   {
@@ -23,8 +25,8 @@ const features = [
 ];
 
 const tags = [
+  "Dedicated  Support  System ",
   "Seamless Event Management",
-  "Dedicated Support",
   "Positive Community Experience",
   "Commitment to Sports Excellence",
 ];
@@ -44,14 +46,13 @@ const FeaturesGrid: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="flex flex-wrap justify-center gap-4">
         {tags.map((tag, index) => (
           <span
             key={index}
-            className=" flex  justify-center align-middle content-center h-10 px-4 py-2 bg-[#FFFFFF26] text-sm rounded-full text-gray-300 border border-gray-500"
+            className=" anaspan flex justify-center items-center h-10 px-4 bg-[#FFFFFF26] text-sm rounded-full text-gray-300 border border-gray-500 w-48 sm:w-56 md:w-64"
           >
-            <img src={verify} alt="" className=" w-7 h-6 mr-2" />
-            
+            <img src={verify} alt="" className="w-7 h-6 mr-2" />
             {tag}
           </span>
         ))}
