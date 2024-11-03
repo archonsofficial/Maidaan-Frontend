@@ -8,7 +8,7 @@ import { increment } from "../store/CounterSlice";
     },[])
     const [isOrganizer, setIsOrganizer] = useState(true);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-white">
+    <div className={`flex flex-col  items-center justify-center min-h-screen  text-white`}>
       {/* Toggle Button */}
       <div className="flex items-center  p-3 space-x-4 mb-8 border border-solid  border-[#CEF23F] rounded-full">
         <button
@@ -30,79 +30,113 @@ import { increment } from "../store/CounterSlice";
       </div>
 
       {/* Login Card */}
-      <div className="w-full max-w-lg bg-gray-bg p-8 rounded-lg shadow-md">
-        <div className="flex flex-col lg:flex-row">
-          {/* Welcome Message */}
-          <div className="flex-1 p-4 text-center lg:text-left">
-            <h2 className="text-3xl font-bold mb-2">
-              Welcome {isOrganizer ? 'Organizer' : 'Champion'}
-            </h2>
-            <p className="text-highlight text-lg">
-              {isOrganizer
-                ? 'Manage your tournaments, engage with players, and create unforgettable experiences.'
-                : 'Enter the arena and continue your journey towards greatness.'}
-            </p>
-          </div>
-
-          {/* Form */}
-          <div className="flex-1 p-4">
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium">
-                  Email/Username *
-                </label>
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="Enter your email address"
-                  className="w-full px-3 py-2 bg-dark-bg border border-gray-600 rounded-md text-white"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="password" className="block text-sm font-medium">
-                  Password *
-                </label>
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Your Password"
-                  className="w-full px-3 py-2 bg-dark-bg border border-gray-600 rounded-md text-white"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-2 mt-4 bg-highlight text-black rounded-md font-semibold"
-              >
-                Log in
-              </button>
-            </form>
-
-            <div className="flex items-center my-4">
-              <div className="flex-1 h-px bg-gray-600" />
-              <span className="px-3 text-sm">or</span>
-              <div className="flex-1 h-px bg-gray-600" />
-            </div>
-
-            <button
-              type="button"
-              className="w-full flex items-center justify-center py-2 border border-highlight rounded-md text-highlight font-semibold"
-            >
-              <img src="path/to/google-icon.png" alt="Google" className="h-5 mr-2" />
-              Log in with Google
-            </button>
-
-            <p className="text-center mt-4 text-sm">
-              Don’t have an account?{' '}
-              <a href="/signup" className="text-highlight underline">
-                Sign Up
-              </a>
-            </p>
-          </div>
+     
+      <div className={`loginCard h-max w-[75%] max-md:w-[90%] xl:w-[1024px] bg-[#FFFFFF15] px-10 py-12 flex flex-col ${!isOrganizer?"max-lg:flex-col-reverse":null} justify-center align-middle lg:flex-row lg:justify-evenly`}>
+        {/* Welcome Message */}
+        {isOrganizer?
+         <div className="welcomeMessage w-full lg:w-1/2  flex flex-col align-middle justify-center">
+        <div className='flex flex-col h-max text-4xl text-center font-semibold justify-center align-middle'>
+          <p>Welcome</p>
+          <p className='text-[#CEF23F]'>Organizer</p>
+          
         </div>
+        <div className='w-full font-medium text-base mt-5 text-center'>
+        Manage your tournaments, engage with players,  and create unforgettable experiences.
+        </div>
+        
+         </div>
+         :null}
+         
+         
+         {/* <form className="Form h-max w-max border flex flex-col border-spacing-1 border-[#CEF23F]">
+          
+           <div className='flex flex-col gap-3 '>
+            <label className='font-secondaryFont font-medium text-lg ' aria-required htmlFor="Email">Email/Username</label>
+            <input className='border border-[#939393] rounded-lg h-11 px-2 py-3' type="text" />
+           </div>
+         
+           <div></div>
+         </form> */}
+
+        <div className={`flex flex-col max-lg:border-t ${isOrganizer?"lg:border-l":"lg:border-r"} border-[#CEF23F] items-center justify-center h-max  py-5 px-6 mt-9 lg:mt-0`}>
+      {/* <div className=" w-max p-6  rounded-md shadow-md"> */}
+        
+        <form className=" flex flex-col justify-between gap-2">
+          <label className="block text-lg font-medium ">
+            Email / Username
+          </label>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            className="w-full px-4 py-2 mb-2 text-[#FFFFFF40] bg-[#FFFFFF15]  border-[#939393] rounded-md focus:outline-none focus:border-lime-500"
+          />
+
+       <label className="block text-lg font-medium ">
+           Create Your Password
+          </label>
+          <input
+            type="text"
+            placeholder="Your Password"
+            className="w-full px-4 py-2 mb-2 text-[#FFFFFF40] bg-[#FFFFFF15] border-[#939393] rounded-md focus:outline-none focus:border-lime-500"
+          />
+
+           <label className="block text-lg font-medium ">
+            Confirm Password
+          </label>
+          <input
+            type="text"
+            
+            className="w-full px-4 py-2 mb-2 text-[#FFFFFF40] bg-[#FFFFFF15]  border-[#939393] rounded-md focus:outline-none focus:border-lime-500"
+          />
+
+          <button
+            type="submit"
+            className="w-full px-4 py-2 mt-6 text-base font-bold text-[#0A0A0A] bg-[#CEF23F] rounded-md  focus:outline-none"
+          >
+           Create Account
+          </button>
+        </form>
+
+        <div className="my-4 flex items-center justify-center text-gray-400">
+          <span className="flex-grow border-t border-gray-600" />
+          <span className="mx-2">or</span>
+          <span className="flex-grow border-t border-gray-600" />
+        </div>
+
+        <button
+          className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-[#CEF23F] border border-[#CEF23F] rounded-md  focus:outline-none"
+        >
+          <img
+            src="https://www.gstatic.com/images/branding/product/2x/gsa_48dp.png"
+            alt="Google Icon"
+            className="w-5 h-5 mr-2"
+          />
+          Sign up using Google
+        </button>
+
+        <p className="mt-6 text-sm text-center text-white">
+         Already have an account?{' '}
+          <a href="#" className="text-[#CEF23F] hover:underline">
+            Log in
+          </a>
+        </p>
       </div>
+      {!isOrganizer?
+         <div className="welcomeMessage w-full lg:w-1/2 flex flex-col align-middle justify-center">
+        <div className='flex flex-col h-max text-4xl text-center font-semibold justify-center align-middle'>
+          <p>Welcome</p>
+          <p className='text-[#CEF23F]'>Champion</p>
+          
+        </div>
+        <div className='w-full font-medium text-base mt-5 text-center'>
+        Enter the arena and continue your journey towards greatness.        </div>
+        
+         </div>
+         :null}
     </div>
+      </div>
+    
+    // </div>
   );
 };
 
